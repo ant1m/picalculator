@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin:'application'
+mainClassName = "com.oab.ateliers.queues.generator.Main"
+
+repositories {
+    jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    compile 'com.rabbitmq:amqp-client:3.4.1'
+}
+
+sourceCompatibility = 1.5
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Generator',
+                   'Implementation-Version': version,
+                    'Main-Class': 'com.oab.ateliers.queues.generator.Main'
+    }
+}

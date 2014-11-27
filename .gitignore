@@ -1,0 +1,8 @@
+pkg
+consumer
+plots
+out
+build
+*.iml
+*gradle*
+!build.gradle
