@@ -1,8 +1,10 @@
 pkg
-consumer
+consumer/consumer
 plots
 out
 build
 *.iml
 *gradle*
 !build.gradle
+.idea
+.gitignore
